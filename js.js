@@ -1,4 +1,3 @@
-
 const sampleWeather = {
     meerut: {
         city: "Meerut",
