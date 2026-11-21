@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherly - Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>☀ Weatherly</h1>
+        <p>Your Personal Weather Dashboard</p>
+        <div id="todayDate"></div>
+    </header>
+
+    <section class="search-section">
+        <input type="text" id="cityInput"
+               placeholder="Enter city name..." value="Meerut">
+
+        <button id="searchBtn">Search</button>
+    </section>
+
+    <p id="message">Showing sample weather data.</p>
+
+    <section class="weather-card">
+
+        <h2 id="cityName">Meerut, IN</h2>
+
+        <div class="temperature">
+            <span id="temperature">29°</span>
+            <span id="weatherIcon">☀️</span>
+        </div>
+
+        <h3 id="condition">Sunny</h3>
+
+        <p>Feels like: <span id="feelsLike">31°C</span></p>
+
+        <p id="highLow">H: 32° L: 24°</p>
+
+    </section>
+
+    <h2 class="heading">Today's Highlights</h2>
+
+    <section class="details">
+
+        <div class="detail-card">
+            <h3>Humidity</h3>
+            <p><span id="humidity">58</span>%</p>
+        </div>
+
+        <div class="detail-card">
+            <h3>Wind Speed</h3>
+            <p><span id="wind">12</span> km/h</p>
+        </div>
+
+        <div class="detail-card">
+            <h3>Feels Like</h3>
+            <p><span id="feelsCard">31</span>°C</p>
+        </div>
+
+        <div class="detail-card">
+            <h3>Rain Chance</h3>
+            <p><span id="rain">10</span>%</p>
+        </div>
+
+    </section>
+
+    <h2 class="heading">5-Day Forecast</h2>
+
+    <section class="forecast-card">
+        <div id="forecastList"></div>
+    </section>
+
+    <section class="tip-card">
+        <h2 id="tipTitle">Weather Tip</h2>
+        <p id="tipText">
+            Keep yourself hydrated and enjoy your day!
+        </p>
+    </section>
+
+    <footer>
+        <p>Weatherly | Student Project</p>
+        <p>Made using HTML, CSS and JavaScript</p>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
